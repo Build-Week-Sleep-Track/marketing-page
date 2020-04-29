@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v28/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMPrQ.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Comfortaa', cursive;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Comfortaa', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  /*   border:1px solid grey; */
+}
+* header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5rem;
+  background-image: url("../imgsleep/HEADER/Navbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  width: 100%;
+}
+* header h2 {
+  margin-top: 6rem;
+  width: 100%;
+  font-size: 3.6rem;
+  padding: 2rem;
+}
+* header nav {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
+  font-size: 100%;
+}
+* header nav a {
+  color: white;
+  opacity: 60%;
+  padding: 0 2rem;
+  margin: 0 4rem;
+  font-size: 2rem;
+}
+.hero {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10rem;
+  background-image: url("../imgsleep/bigsleep.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: 100% ;
+}
+.hero .sleepbg {
+  margin: 0 5rem;
+}
+.hero .sleepbg .titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hero .sleepbg .titles .buttons .signup {
+  margin-top: 20rem;
+  color: white;
+  height: 3.6rem;
+  width: 20.6rem;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: #39869D;
+}
+.hero .sleepbg .titles .buttons .login {
+  margin-top: 20rem;
+  margin: 0 3rem;
+  color: white;
+  height: 3.6rem;
+  width: 20.6rem;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: #061E33;
+  border: 1px solid #39869D;
+}
+.hero .sleepbg .titles h1 {
+  width: 55%;
+  font-size: 4.8rem;
+  margin: 1rem 0;
+}
+.hero .sleepbg .titles p {
+  width: 55%;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+body {
+  color: white;
+  background-color: #121212;
+}
+body .About {
+  margin: 0 5rem;
+  width: 30%;
+}
+body .About h3 {
+  font-size: 2.8rem;
+}
