@@ -185,22 +185,21 @@ img {
 * header {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  padding: 5rem;
+  align-items: left;
   background-image: url("../imgsleep/HEADER/Navbg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
   width: 100%;
 }
-* header h2 {
-  margin-top: 6rem;
+* header .logo {
+  margin-top: 8rem;
   width: 100%;
   font-size: 3.6rem;
   padding: 2rem;
+  text-align: left;
 }
 * header nav {
-  margin-top: 6rem;
+  margin-top: 8rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -268,10 +267,34 @@ body {
   color: white;
   background-color: #121212;
 }
-body .About {
-  margin: 0 5rem;
-  width: 30%;
+body h2 {
+  padding: 4rem;
+  width: 100%;
+  text-align: center;
 }
-body .About h3 {
+body .About {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 500px) {
+  body .About {
+    background: red;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+body .About h2 {
+  margin-top: 5rem;
+  width: 100%;
+  text-align: center;
+}
+body .About .box {
+  flex-direction: column;
+  width: 20%;
+}
+body .About .box h3 {
+  padding: 4rem;
   font-size: 2.8rem;
+  text-align: center;
 }
