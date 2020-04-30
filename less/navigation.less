@@ -1,11 +1,4 @@
 
-*{
-    box-sizing:border-box;
-    padding:0;
-    margin:0;
-    max-width:100%;
-  /*   border:1px solid grey; */
-
 
 header{
     display: flex;
@@ -15,31 +8,78 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    //element.style {
+        //visibility: visible;
+        //animation-name: billboard-scale;
+    }
+    @media @tablet {
+        width: 100%;
+        font-size: 2rem;
+        padding: 0;
+        justify-content: center;
+        padding: 0;
+      }
+    @media @mobile {
+        width: 100%;
+        font-size: 2rem;
+        padding: 0;
+        justify-content: center;
+        padding: 0 2rem;
+        
+    }
 
     .logo{
         margin-top: 8rem;
         width: 100%;
-        font-size: 3.6rem;
+        font-size: 2.8rem;
         padding: 2rem;
         text-align: left;
+        @media @tablet {
+            margin-top: 2rem;
+            margin-left: 0rem;
+            width: 100%;
+            font-size: 2.8rem;
+            padding: .75rem;
+          }
+        @media @mobile {
+            margin-top: 2rem;
+            width: 100%;
+            font-size: 1.6rem;
+            padding: 0;
+
+        }
     }
     
 
 nav {
     margin-top: 8rem;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    
     padding: 2rem;
     font-size: 100%;
+    @media @tablet {
+      margin-right: 0rem;
+    }
+    @media @mobile {
+        justify-content: center;
+        align-items: center;
+    }
     
         a {
             color: white;
             opacity: 60%;
             padding: 0 2rem;
             margin: 0 4rem;
-            font-size: 2rem;
+            font-size: 1.8rem;
             
+            @media @mobile {
+                width: 80%;
+                font-size: 1.2rem;
+                margin: 0 2rem;
+                padding: 0;
+                display: flex;
+                justify-content: flex-start;
+            }
         }
 
 //@media @mobile {
@@ -62,13 +102,18 @@ nav {
     width: 100% ;
     
   .sleepbg {
-    
-    margin: 0 5rem;
+    justify-content: flex-end;
    
     .titles{
        display: flex;   
        flex-direction: column;
        align-items: flex-end;
+       width: 55%;
+       @media @mobile {
+           width:60%;
+           margin-left: 6rem;
+    }
+    }
        //justify-content: flex-end;
        
         .buttons{
@@ -84,6 +129,11 @@ nav {
             text-align: center;
             font-size: 1.8rem;
             background-color:@teal;
+            @media @mobile {
+                margin: 3rem 0rem;
+                margin-left: 6rem;
+                
+            }
 
         }
         .login{ 
@@ -97,18 +147,42 @@ nav {
             font-size: 1.8rem;
             background-color: #061E33;
             border: 1px solid @teal;
-
+            
+            @media @mobile {
+                display:flex;
+                justify-content: center;
+                margin-left: 6rem;
+               
+            }
         }
+        @media @mobile {
+            margin-right: 3rem;
     }
         h1{
             width: 55%;
             font-size: 4.8rem;
             margin: 1rem 0;
-        }
+            
+            @media @mobile {
+                width: 90%;
+                font-size: 3.8rem;
+                padding: 3rem;  
+                
+            }
+          }
         p{
             width: 55%;
             font-size: 1.8rem;
-            margin: 1rem 0;
+            padding: 4rem
+            
+
+            @media @mobile{
+                width: 80%;
+                margin: 4rem, 0;
+                font-size: 2rem;
+                
+               
+        }
         }
 
     }
