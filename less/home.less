@@ -5,15 +5,26 @@ body{
        padding: 4rem;
        width: 100%;
        text-align: center;
+       @media @tablet {
+        width: 100%;
+    }
+
+       @media @mobile {
+        width: 100%;
+    }
    }
     .About{
         width: 100%;
         display: flex;
         justify-content: space-around;
-        @media @mobile {
-            background: red;
+        @media @tablet {
             flex-direction: column;
             justify-content: center;
+        }
+         @media @mobile {
+            flex-direction: column;
+            justify-content: center;
+            
         }
         
         h2{
@@ -26,10 +37,27 @@ body{
             
             flex-direction: column;
             width: 20%;
+            @media @tablet {
+                width: 80%;
+                justify-content: center;
+                margin:  6rem;
+            }
+            @media @mobile {
+                width: 80%;
+                justify-content: center;
+                margin:  6rem;
+            }
              h3{
                 padding: 4rem;
                 font-size: 2.8rem;
                 text-align: center;
+
+                @media @tablet {
+                    width: 100%;
+                }
+                @media @mobile {
+                    width: 100%;
+                }
              }   
 
         }
